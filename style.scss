@@ -8,20 +8,23 @@
 @import "reset";
 @import "open-color";
 @import "variables";
+@import "jekyll-theme-leap-day";
 
-// Syntax highlighting @import is at the bottom of this file
+// 语法突出显示@import位于此文件的底部
 
-/**************/
-/* BASE RULES */
-/**************/
+@font-face {
+    font-family: "MSYH";
+    src: url("/assets/fonts/MSYH.ttf");
+}
 
 html {
   font-size: $base-font-size;
 }
 
 body {
-  font-family: $base-font;
-  color: $base-color;
+  font-family:  "Times New Roman", "MSKT";  
+  font-size: 20px;  
+  color: black;
   line-height: 1.7em;
 }
 
