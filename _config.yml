@@ -15,7 +15,7 @@ description: Kelaino Library
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
 # 那么就写成 "/repository-name"
-baseurl: /LOFFER
+baseurl: /book
 
 # [可选]博客logo图片URL，建议尺寸不超过300px × 300px
 # avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
