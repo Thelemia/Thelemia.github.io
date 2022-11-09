@@ -1,6 +1,4 @@
-
-# [可选]favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://ovo.wxw.media/media_attachments/files/109/310/828/701/996/843/original/62f95928bd0b6a3c.png
+favicon: https://ovo.wxw.media/media_attachments/files/109/310/828/701/996/843/original/62f95928bd0b6a3c.png # [可选]浏览器Logo
 title: wu-kan # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
   SYSU第5年<br/>
@@ -8,18 +6,6 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
   田宫例四驱车<br/>
   <a href="mailto:i@wu-kan.cn">
     <i class="fa-solid fa-envelope"></i>
-  </a>
-  <a href="https://github.com/wu-kan">
-    <i class="fa-brands fa-github"></i>
-  </a>
-  <a href="https://vjudge.net/user/WuK">
-    <i class="fa-solid fa-smile"></i>
-  </a>
-  <a href="https://space.bilibili.com/166390020">
-    <i class="fa-brands fa-bilibili"></i>
-  </a>
-  <a href="https://www.zhihu.com/people/wu.kan/activities">
-    <i class="fa-brands fa-zhihu"></i>
   </a>
   <br/>
 url: https://wu-kan.cn # 你的域名，例如 https://wu-kan.github.io
