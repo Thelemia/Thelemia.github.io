@@ -7,7 +7,7 @@ url: https://thelemia.github.io
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
 # 那么就写成 "/repository-name"
-baseurl: /repository-name
+baseurl: /book
 
 # [可选]博客logo图片URL，建议尺寸不超过300px × 300px
 avatar: https://ovo.wxw.media/media_attachments/files/109/310/828/701/996/843/original/62f95928bd0b6a3c.png
@@ -17,13 +17,13 @@ favicon: https://ovo.wxw.media/media_attachments/files/109/310/828/701/996/843/o
 # 菜单中的按钮
 navigation:
   - name: 首页
-    url: /home
+    url: https://thelemia.github.io/home
   - name: 关于
-    url: /about
+    url: https://thelemia.github.io/about
   - name: 归档
-    url: /book
+    url: https://thelemia.github.io/book
   - name: 标签
-    url: /tags
+    url: https://thelemia.github.io/tags
 
 # 每页的文章数
 paginate: 10
