@@ -31,10 +31,6 @@ excerpt_separator: <!-- more -->
 
 # 站点页脚的文字
 footer-text: Copyright (c) 2022 刻莱诺图书馆
-footer-links: 
-  weibo: https://weibo.com/5018395824/profile?rightmod=1&wvr=6&mod=personinfo  #微博个性域名
-  twitter: # https://www.twitter.com/<your_twitter_username> 
-  email: witchstaynight@gmail.com #youremailaddress@mail.com
 
 # 评论，不要同时添加多种不同的评论区
 disqus: thelemia #shortname
