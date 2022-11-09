@@ -119,7 +119,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     background: none;
                   }
                 </style>
-              - | # 修复侧边栏特定情况下抖动的问题，感谢 [@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/11)
+              - | # 修复侧边栏特定情况下抖动的问题
                 <style>
                   .sidebar {
                     overflow: hidden;
@@ -160,52 +160,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     transform: rotate3d(0, 1, 0, -180deg);
                   }
                 </style>
-              - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
-                <div>
-                  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
-                  <span id="run_time_day">
-                    <i class="fa-solid fa-spinner fa-pulse"></i>
-                  </span>天
-                  <span id="run_time_hour">
-                    <i class="fa-solid fa-spinner fa-pulse"></i>
-                  </span>时
-                  <span id="run_time_minute">
-                    <i class="fa-solid fa-spinner fa-pulse"></i>
-                  </span>分
-                  <span id="run_time_second">
-                    <i class="fa-solid fa-spinner fa-pulse"></i>
-                  </span>秒
-                  <script>
-                    setInterval(function (d,h,m,s,b) {
-                      function setzero(i) {
-                        return i < 10 ? "0" + i : i;
-                      }
-                      let BirthDay = new Date(b);
-                      let today = new Date();
-                      let timeold = (today.getTime() - BirthDay.getTime());
-                      let sectimeold = timeold / 1000;
-                      let secondsold = Math.floor(sectimeold);
-                      let msPerDay = 24 * 60 * 60 * 1000;
-                      let e_daysold = timeold / msPerDay;
-                      let daysold = Math.floor(e_daysold);
-                      let e_hrsold = (e_daysold - daysold) * 24;
-                      let hrsold = Math.floor(e_hrsold);
-                      let e_minsold = (e_hrsold - hrsold) * 60;
-                      let minsold = Math.floor((e_hrsold - hrsold) * 60);
-                      let seconds = Math.floor((e_minsold - minsold) * 60);
-                      d.textContent = daysold;
-                      h.textContent = setzero(hrsold);
-                      m.textContent = setzero(minsold);
-                      s.textContent = setzero(seconds);
-                    },
-                    1000,
-                    document.getElementById("run_time_day"),
-                    document.getElementById("run_time_hour"),
-                    document.getElementById("run_time_minute"),
-                    document.getElementById("run_time_second"),
-                    "10/04/2017 11:03:56")// 这是我第一篇CSDN博客的时间
-                  </script>
-                </div>
               - | # 不蒜子页面统计，看不懂可不改
                 <div>
                   <div>
@@ -243,25 +197,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   <i class="fa-solid fa-copyright fa-fw"></i>
                   2017-2022 WuK
                 </div>
-              - | # 我的备案信息，请你的网站删掉这一项。互联网非法外之地！
-                <div>
-                  <i class="fa-solid fa-info-circle fa-fw"></i>
-                  <a href="http://beian.miit.gov.cn">
-                    粤ICP备 20024947号
-                  </a>
-                </div>
-              - | # 公安网备信息
-                <div>
-                  <img src="https://cdn.jsdelivr.net/gh/wu-kan/blog-image/2021/12/07/0.png" class="fa-fw"></img>
-                  <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34070202000407">
-                    皖公网安备 34070202000407号
-                  </a>
-                </div>
             wordcount: # 全站字数统计
               enable: false # 本地调试时建议关闭，非常影响站点生成速度（所需时间与博文数量的平方成正比）
               prepend: <i class="fa-solid fa-user-edit fa-fw"></i>
               kilo: 千
               unit: 字
+              
           append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
             - | # jsdelivr 防挂脚本，来自 https://github.com/PipecraftNet/jsdelivr-auto-fallback/blob/0.2.2/index.min.js
               <script>
