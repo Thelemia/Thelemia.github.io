@@ -12,16 +12,6 @@ baseurl: /Kelaino
 # [可选]favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
 favicon: https://ovo.wxw.media/media_attachments/files/109/310/828/701/996/843/original/62f95928bd0b6a3c.png
 
-# 菜单中的按钮
- navigation:
-   - name: 首页
-     url: /
-   - name: 关于
-     url: /about
-   - name: 归档
-     url: /book
-   - name: 标签
-     url: /tags
 
 # 每页的文章数
 paginate: 10
